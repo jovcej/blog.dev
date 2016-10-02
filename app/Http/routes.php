@@ -14,7 +14,6 @@
 Route::get('article', 'ArticleController@create');
 Route::get('article/create', 'CreateController@home');
 Route::post('article/create', 'CreateController@store');
-
 Route::get('article/edit/{id}/{title}', 'TextController@edit');
 Route::delete('article/task/{task}', 'ArticleController@task');
 Route::resource('edit', 'ArticleController@edit');
