@@ -7,17 +7,17 @@
             <ul class="list-group">
                 @foreach($tables as $table)
                     <li class="list-group-item">
-                        <a href={{URL::to( "create/article/edit/" . $table->id . '/' . $table->title = str_slug($table->title,'-')) }}>
+                        <a href={{URL::to( "article/edit/" . $table->id . '/' . $table->title = str_slug($table->title,'-')) }}>
                             <img src={{ URL::to ('/uploads/'. $table->picture ) }} width="200" height="165"  class="img-thumbnail"></a>
 
                         <div class="published"> {{ $table->published_at }}</div>
 
-                        <a  href={{URL::to("create/article/edit/" . $table->id . '/' . $table->title = str_slug($table->title,'-')) }}>
+                        <a  href={{URL::to("article/edit/" . $table->id . '/' . $table->title = str_slug($table->title,'-')) }}>
                             <div class="title"><h1>{{ $table->title = str_slug($table->title,' ')}}</h1></div></a>
 
 
 
-                        <form action="{{ url('create/article/task/'. $table->id) }}" method="POST">
+                        <form action="{{ url('article/task/'. $table->id) }}" method="POST">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
 
