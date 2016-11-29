@@ -21,7 +21,7 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 >app/Http/routes.php are the routes of the project
 >app/Http/Controllers are the controllers of the project
 >app/Article.php is the model of the project
->database/migrations are the migrates of the project
+>database/migrations are the migrations of the project
 >rosources/views are the views of the projest
 >.env are the database settings
 
