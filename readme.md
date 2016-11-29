@@ -14,13 +14,30 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+## Feature Overview
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+	Sample web site made as a basic for e-advertising (adding, modifying and/or deleting entries).
 
-## Security Vulnerabilities
+>app/Http/routes.php are the routes of the project
+>app/Http/Controllers are the controllers of the project
+>app/Article.php is the model of the project
+>database/migrations are the migrates of the project
+>rosources/views are the views of the projest
+>.env are the database settings
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## DB structure
+
+CREATE TABLE `articles` (
+  `id` int(10) unsigned NOT NULL  AUTO_INCREMENT,
+  `title` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  `text` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  `name` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  `email` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  `number` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  `published_at` datetime	 NOT NULL,
+  `picture` varchar(255)	utf8_unicode_ci	 NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 ## License
 
