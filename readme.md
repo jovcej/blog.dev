@@ -14,7 +14,7 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Feature Overview
+## Overview
 
 	Sample web site made as a basic for e-advertising (adding, modifying and/or deleting entries).
 
